@@ -56,7 +56,9 @@ MainActivity初始化左侧菜单时把flag设置成 FLAG_TRANSLUCENT_STATUS，�
   ```
 
 ##开发过程中遇到的问题
-![](https://github.com/Eric0liang/ImmersiveSlidingMenu/blob/master/screenshot.png)
+![](https://github.com/Eric0liang/ImmersiveSlidingMenu/blob/master/shot.png)
+
+截图中设置不透明度的白色线，实现代码如下：
 ```
 View line = view.findViewById(R.id.view_line);
 line.getBackground().mutate().setAlpha(255 * 3 / 10);
