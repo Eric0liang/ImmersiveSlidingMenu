@@ -20,7 +20,7 @@ public class MenuFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_left_fragment, container, false);
         View line = view.findViewById(R.id.view_line);
-        line.getBackground().setAlpha(255 * 3 / 10);
+        line.getBackground().mutate().setAlpha(255 * 3 / 10);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             int statusbarHeight = getStatusBarHeight();
             LinearLayout top_head = (LinearLayout) view.findViewById(R.id.main_left_fragment);
